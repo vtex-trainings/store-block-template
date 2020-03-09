@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "test": "vtex-test-tools test",
+    "lint": "tsc --noEmit && eslint --ext ts,tsx ."
+  },
+  "dependencies": {
+    "@vtex/css-handles": "^1.0.0",
+    "classnames": "^2.2.6",
+    "ramda": "^0.26.1",
+    "react": "^16.8.3",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.8.3",
+    "react-intl": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5",
+    "@types/prop-types": "^15.7.0",
+    "@types/ramda": "^0.26.5",
+    "@types/react": "^16.9.2",
+    "@vtex/test-tools": "^1.1.0",
+    "apollo-client": "^2.5.1",
+    "eslint": "^5.16.0",
+    "eslint-config-vtex-react": "^4.1.0",
+    "prettier": "^1.18.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "3.7.3",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.94.0/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.8/public/@types/vtex.styleguide"
+  }
+}

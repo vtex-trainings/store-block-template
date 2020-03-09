@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@vtex/api": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "8.x",
+    "@vtex/api": "^3.0.0",
+    "typescript": "3.7.3"
+  }
+}
