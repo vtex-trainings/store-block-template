@@ -11,20 +11,20 @@ export const parseTimeRemaining = (totalSeconds: number) : TimeSplit => {
         hours: fillWithZero(2, hours),
         minutes: fillWithZero(2, minutes),
         seconds: fillWithZero(2, seconds)
-    } 
+    }
 }
 
-const fillWithZero = (digits: number, number: number) : string => { 
-   const filled = '0'.repeat(digits - 1) + number 
+const fillWithZero = (digits: number, number: number) : string => {
+   const filled = '0'.repeat(digits - 1) + number
    return filled.slice(filled.length - digits)
 }
 
 /**
- * 
+ *
  * @param targetDate ISOString for the date that the countdown will expire
  * @param dispatchFn A function that updates the state of the component
  */
-export const tick = (targetDate: string, dispatchFn: React.Dispatch<React.SetStateAction<TimeSplit>>) => { 
+export const tick = (targetDate: string, dispatchFn: React.Dispatch<React.SetStateAction<TimeSplit>>) => {
   const ONE_SECOND_IN_MILLIS = 1000
   let finalDate = new Date(targetDate)
   let now = new Date()
@@ -34,4 +34,10 @@ export const tick = (targetDate: string, dispatchFn: React.Dispatch<React.SetSta
   setTimeout(()=> {
     dispatchFn(parseTimeRemaining(secondsLeft))
   }, ONE_SECOND_IN_MILLIS)
+}
+
+export const getTwoDaysFromNow = () => {
+  const today = new Date()
+  today.setDate(today.getDate() + 2)
+  return today.toISOString()
 }
