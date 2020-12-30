@@ -5,7 +5,7 @@
   "devDependencies": {
     "@types/node": "8.x",
     "@vtex/api": "^3.0.0",
-    "typescript": "3.7.3"
+    "typescript": "3.9.4"
   },
   "resolutions": {
     "**/**/minimist": "^0.2.1",

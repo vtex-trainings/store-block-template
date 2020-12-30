@@ -1,3 +1,3 @@
-import { IOClients } from "@vtex/api";
+import { IOClients } from '@vtex/api'
 
 export class Clients extends IOClients {}

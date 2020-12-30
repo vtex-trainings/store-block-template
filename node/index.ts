@@ -4,7 +4,8 @@ import { Clients } from './clients'
 
 const TIMEOUT_MS = 5000
 
-const memoryCache = new LRUCache<string, any>({max: 5000})
+const memoryCache = new LRUCache<string, any>({ max: 5000 })
+
 metrics.trackCache('status', memoryCache)
 
 const clients: ClientsConfig<Clients> = {
@@ -29,9 +30,7 @@ export default new Service<Clients, {}>({
   clients,
   graphql: {
     resolvers: {
-      Query: {
-
-      },
+      Query: {},
     },
   },
 })
